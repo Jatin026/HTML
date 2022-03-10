@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<body>
+<article>
+    <button type="button" 
+            onclick="myFunction()" style = "color:rgb(42, 71, 167);" >
+      Click Me! To find Tutorials
+    </button>
+    <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
+    <base href="https://www.geeksforgeeks.org">
+    <h1 style = "color:rgb(114, 128, 60);"><b><i>WE ARE BLOGGING</i></b></h1><hr>
+    <p style = "color:rgb(83, 172, 83);"  >WELCOME TO OUR BLOG, we homeless people , we sad depressed, nerds</p>
+    <p style = "color:rgb(85, 175, 130);" >This is our first HTML code , so why not give you a <abbr title="Competitive Programming">CP</abbr> problem.</p>
+    <a href ="https://codeforces.com/problemset/problem/1097/B" style = "color:rgb(34, 207, 193);"  >Problem Statement</a><br><br>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style = "color:rgb(103, 124, 28);" >Best Solution Possible</a><br><br>
+    <address>Contact us at <a href="https://jatin026.github.io"> Jatin</a></address><br>
+    <address>Contact us at <a href="https://mail.google.com/mail/u/1/#inbox"> Email</a></address><br>
+    <script>
+        function myFunction() {
+            
+            var a = document.createElement('a');
+            a.title = "This is Link"; 
+            var link = document.createTextNode("This is link");
+                  
+            // Append the text node to anchor element.
+            a.appendChild(link);       
+            // Set the href property.
+            a.href = "https://www.geeksforgeeks.org";
+            document.body.appendChild(a); 
+            
+        }
+    </script>
+</article>
+</body>
+</html>
