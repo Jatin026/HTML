@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+        body {
+            background-color:linen;
+        }
+        h1 {
+            color: rgb(199, 196, 212);
+            text-align: center;
+            padding : 10px;
+            margin:0;
+          }
+         
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            padding : 10px;
+            
+          }
+          #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 90 stretch;
+}       
+</style>
+</head>
+<body>
+<article>
+    <!-- <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee> --> 
+    <h1 id="borderimg" style = "color:rgb(195, 160, 42);"><b><i>EE Elections</i></b></h1><hr>
+    <p style = "color:rgb(83, 172, 83);"  >Kush </p>
+    <button type="button" 
+            onclick="kush()" style = "color:rgb(42, 71, 167);" >
+      Vote for Kush
+    </button>
+    <p id="kus">Count of Kush </p>
+    <p id="sac">Count of Sachin </p>
+    <button type="button" 
+            onclick="sachin()" style = "color:rgb(42, 71, 167);" >
+      Vote for Sachin
+    </button>
+    <p id="result">RESULTS WILL SHOW HERE !!! </p>
+    <button type="button" 
+            onclick="results()" style = "color:rgb(25, 199, 25);" >
+      Click this button for results
+    </button>
+    <script>
+        var cnta=0,cntb=0;
+        function kush(){
+            
+            cnta++;
+            document.getElementById("kus").innerHTML= "You have VOTED "  ;
+        }
+        function sachin(){
+            
+            cntb++;
+            document.getElementById("sac").innerHTML= "You have VOTED "  ;
+        }
+        function results(){
+            if(cnta>cntb){
+                document.getElementById("result").innerHTML=" Kush has WON";
+            }
+            else{
+                document.getElementById("result").innerHTML=" Sachin has WON";
+            }
+        }
+    </script>
+</article>
+</body>
+</html>
+
+
+
+
+
+ 

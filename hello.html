@@ -1,5 +1,30 @@
 <!DOCTYPE>
 <html>
+<head>
+    <style>
+        body {
+            background-color:linen;
+        }
+        h1 {
+            color: rgb(199, 196, 212);
+            text-align: center;
+            padding : 10px;
+            margin:0;
+          }
+         
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            padding : 10px;
+            
+          }
+          #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 90 stretch;
+}       
+</style>
+</head>
 <body>
 <article>
     <button type="button" 
@@ -7,8 +32,9 @@
       Click Me! To find Tutorials
     </button>
     <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
+     
     <base href="https://www.geeksforgeeks.org">
-    <h1 style = "color:rgb(114, 128, 60);"><b><i>WE ARE BLOGGING</i></b></h1><hr>
+    <h1 id="borderimg" style = "color:rgb(114, 128, 60);"><b><i>WE ARE BLOGGING</i></b></h1><hr>
     <p style = "color:rgb(83, 172, 83);"  >WELCOME TO OUR BLOG, we homeless people , we sad depressed, nerds</p>
     <p style = "color:rgb(85, 175, 130);" >This is our first HTML code , so why not give you a <abbr title="Competitive Programming">CP</abbr> problem.</p>
     <a href ="https://codeforces.com/problemset/problem/1097/B" style = "color:rgb(34, 207, 193);"  >Problem Statement</a><br><br>
@@ -33,3 +59,9 @@
 </article>
 </body>
 </html>
+
+
+
+
+
+ 
