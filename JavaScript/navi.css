@@ -1,0 +1,21 @@
+.nav {
+    background-color: rgb(77, 189, 204);
+    overflow: hidden;
+}
+.nav a{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: rgb(114, 76, 4);
+    float: left;
+
+}
+.nav a:hover{
+    color: black;
+    background-color: rgb(214, 248, 20);
+}
+.nav a.active{
+    color: white;
+    background-color: violet;
+}
